@@ -73,7 +73,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs takes an input list and runs a command for every item in the list. 
- For example, to remove the .md suffix from all of the markdown files in dsp, i can use **basename -s .md -a *.md | xargs -n1 -i mv {}.md {}**. The basename command generates a list of strings of the file names without the .md suffix. This is then fed into the xargs command, which applies the mv command to each argument in the list of strings.  
+xargs takes an input list and runs a command for every item in the list. 
+For example, to remove the .md suffix from all of the markdown files in dsp, i can use 
+**basename -s .md -a *.md | xargs -n1 -i mv {}.md {}** 
+The basename command generates a list of strings of the file names without the .md suffix. This is then fed into the xargs command, which applies the mv command to each argument in the list of strings.  
 
 
