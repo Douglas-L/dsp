@@ -20,7 +20,17 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >
+* show current working directory path - pwd #print working directory
+* creating a directory - mkdir <Directory> 
+* deleting a directory - rmdir <Directory>
+* creating a file using `touch` command - touch <file>
+* deleting a file - rm <file>
+* renaming a file - mv <source> <newname>
+* listing hidden files ls -a
+* copying a file from one directory to another - cp <source> <destination>
+* look up manual for command - man <command>
+* concatenate - join files but can also use to view files - cat <file>
 
 ---
 
@@ -35,7 +45,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >
+1. 'ls' lists a directory's contents
+2. 'ls -a' lists a directory's contents, including hidden entries.
+3. 'ls -l' uses a long listing format, giving additional information on permissions, time modified, owners, etc.
+4. 'ls -lh' prints the list with  human readable file sizes.
+5. 'ls -lah' is like -a, but in long listing format with human readable sizes.
+6. 'ls -t' sorts the list by modification time, newest first.
+7. 'ls -Glp' is like -l but with the group names omitted, and a / indicator is appended to directories.
 
 ---
 
@@ -43,7 +60,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >
+1. 'ls -r' lists files in reverse order.
+2. 'ls -R' displays subdirectories as well.
+3. 'ls -d' displays only directories.
+4. 'ls -1' displays each entry on a line.
+5. 'ls -m' displays files by file timestamp. comma-separated list.
 
 ---
 
@@ -51,7 +73,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs takes an input list and runs a command for every item in the list. 
+ For example, to remove the .md suffix from all of the markdown files in dsp, i can use **basename -s .md -a *.md | xargs -n1 -i mv {}.md {}**. The basename command generates a list of strings of the file names without the .md suffix. This is then fed into the xargs command, which applies the mv command to each argument in the list of strings.  
 
- 
 
